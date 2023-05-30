@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <meta http-equiv="refresh" content="7; url='portfolio.html'"/>
+    <style>
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1A1A1A;
+}
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #00e1ffaf;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+    </style>
+    <title>Loading</title>
+</head>
+<body class="body2">
+
+    
+    <div class="waviy">
+      <span style="--i:1">L</span>
+      <span style="--i:2">O</span>
+      <span style="--i:3">A</span>
+      <span style="--i:4">D</span>
+      <span style="--i:5">I</span>
+      <span style="--i:6">N</span>
+      <span style="--i:7">G</span>
+      <span style="--i:8">.</span>
+      <span style="--i:9">.</span>
+      <span style="--i:10">.</span>
+    </div>
+
+
+    <div class="loading">
+
+      <div id="loader">
+        <div class="ls-particles ls-part-1"></div>
+        <div class="ls-particles ls-part-2"></div>
+        <div class="ls-particles ls-part-3"></div>
+        <div class="ls-particles ls-part-4"></div>
+        <div class="ls-particles ls-part-5"></div>
+        <div class="lightsaber ls-left ls-green"></div>
+        <div class="lightsaber ls-right ls-red"></div>
+      </div>
+  </div>
+    
+</body>
+</html>
